@@ -59,7 +59,7 @@ class App extends React.Component{
             var isFavorite=UserLocationObject.isFavorite;
             var LocationObject= SetLocaionObject(key,name,contryName,isFavorite);
         }
-       // this.props.GetGeoLocationAction(LocationObject);
+        this.props.GetGeoLocationAction(LocationObject);
         this.GetCurrentWeatherByLocation(UserLocationObject.Key);
 
     };
