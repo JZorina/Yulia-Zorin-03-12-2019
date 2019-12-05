@@ -34,7 +34,7 @@ class SearchBar extends React.Component{
   }
 
     getInfo = async() => {
-        await fetch(GetAutoCompleteSearchText(this.state.term))
+        var dataObj=await fetch(GetAutoCompleteSearchText(this.state.term))
         .then(res => res.json())
         .catch(error=>this.handleWithAPIError(error))
         .then(data=>{
@@ -42,7 +42,9 @@ class SearchBar extends React.Component{
             cityNames: data,
             results: data.map(this.getAttributesFromData)
             });    
-   })}
+   })
+   if (dataObj === undefined) return}
+   
  
    getAttributesFromData(data){
        return{

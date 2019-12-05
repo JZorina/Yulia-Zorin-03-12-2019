@@ -47,6 +47,7 @@ class App extends React.Component{
        var UserLocationObject=await fetch(GetGeoLocation(lat,long))
        .then(response=>response.json())
        .catch(error=>this.handleWithAPIError(error))
+       if (UserLocationObject === undefined) return
         this.CreateLocationObject(UserLocationObject);
     }
 
@@ -68,6 +69,7 @@ class App extends React.Component{
         var CurrentWeatherObject=await fetch(GetCurrentWeather(locationKey))
         .then(response=>response.json())
         .catch(error=>this.handleWithAPIError(error))
+        if (CurrentWeatherObject === undefined) return
        this.CreateWeatherObject(CurrentWeatherObject,locationKey);
 
     };
@@ -90,6 +92,7 @@ class App extends React.Component{
         var ForecastObject=await fetch(GetDailyForecastlocationKey(locationKey))
         .then(response=>response.json())
         .catch(error=>this.handleWithAPIError(error))
+        if (ForecastObject === undefined) return
        this.CreateForecastObject(ForecastObject);
     };
 
