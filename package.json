@@ -1,5 +1,5 @@
 {
-  "homepage": "https://github.com/JZorina/Yulia-Zorin-04-12-2019",
+  "homepage": "https://github.com/JZorina/Yulia-Zorin-03-12-2019",
   "name": "herolo_challenge",
   "version": "0.1.0",
   "private": true,
@@ -42,6 +42,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^2.1.1"
+    "gh-pages": "^2.0.1"
   }
 }
