@@ -1,5 +1,4 @@
- const apikey="IXnFcSvpQHkBuCrinofuwuvkk4qrlf8M";
- // const apikey="EGm4KyPMocurML1gESFYApNtKpnlMnNY";
+ const apikey="DUr85WjeVVEYey5aLEGjGAaqvBzTK8cA";
  //const apikey="RDoW7sTfu9F4x00uvyNi8wBypvRmdvx6";
 
 export const GetAutoCompleteSearchText=(text)=>{
