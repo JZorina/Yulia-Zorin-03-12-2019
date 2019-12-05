@@ -1,5 +1,5 @@
- const apikey="DUr85WjeVVEYey5aLEGjGAaqvBzTK8cA";
- //const apikey="RDoW7sTfu9F4x00uvyNi8wBypvRmdvx6";
+ const apikey="r67hJ4XFUS4zuBIvGnErmsAOcfF8NEMR";
+
 
 export const GetAutoCompleteSearchText=(text)=>{
   return "http://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey="+apikey+"&q="+text
