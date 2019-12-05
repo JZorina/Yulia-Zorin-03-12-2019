@@ -1,0 +1,16 @@
+.frontPage_light{
+    text-align: center;
+    background-color:#B0E0E6;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh !important;
+  }
+  
+  .frontPage_dark{
+    text-align: center;
+    background-color:#B3B4C2;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh !important;
+  }
+  
