@@ -24,10 +24,7 @@ import Header from './Layout/Header';
 import '../styles/App.css';
 
 class App extends React.Component{
-    state={
-        errMsg:''
-    };
-
+    
     componentDidMount(){
         window.navigator.geolocation.getCurrentPosition(
             (position)=>{
